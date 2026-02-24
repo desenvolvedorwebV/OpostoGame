@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Alter Ego Grid</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="hud">
+    <div>❤️ Vidas: <span id="lives"></span></div>
+    <div>🔁 Trocas: <span id="swaps"></span></div>
+    <div>💰 Moedas: <span id="coins"></span></div>
+</div>
+
+<div id="game"></div>
+
+<div id="ui">
+    <div class="controls">
+        <div></div>
+        <button onclick="moveVertical(-1)">⬆️</button>
+        <div></div>
+
+        <button onclick="move(-1,0)">⬅️</button>
+        <button onclick="moveVertical(1)">⬇️</button>
+        <button onclick="move(1,0)">➡️</button>
+
+        <button onclick="swap()">AÇÃO 1</button>
+        <button onclick="restart()">RESET</button>
+    </div>
+</div>
+
+<script src="game.js"></script>
+</body>
+</body>
+</html>
